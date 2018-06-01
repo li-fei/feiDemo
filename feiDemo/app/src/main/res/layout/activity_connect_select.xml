@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/activity_app_title"/>
+
+    <TextView
+        android:id="@+id/tv_connect_select_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_how_to_connect" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/tv_connect_select_title"
+        android:layout_marginTop="60dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_remote_control_connect"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/drone_connected_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_remote_control_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/remote_control_connect_img"/>
+
+            <TextView
+                android:id="@+id/tv_remote_control_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_remote_control_connect"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_remote_control" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_remote_control_connect"
+                android:layout_alignLeft="@+id/tv_remote_control_connect"
+                android:textSize="12dp"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_connection_tutorials" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mobile_phone_connect"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/drone_connected_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_mobile_phone_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/mobile_phone_connect_img"/>
+
+            <TextView
+                android:id="@+id/tv_mobile_phone_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_mobile_phone_connect"
+                android:layout_marginTop="-3dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_mobile_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_mobile_phone_connect"
+                android:layout_alignLeft="@+id/tv_mobile_phone_connect"
+                android:textSize="12dp"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_connection_tutorials" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_remote_control_connect_hint_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/text_size_1"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_remote_control" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remote_control_connect_hint_page"
+        android:layout_alignLeft="@+id/tv_remote_control_connect_hint_page"
+        android:textSize="@dimen/text_size_3"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_connection_tutorials" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_remote_control_connect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_remote_control_connect_next"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/connect_hint_skip_1_selected"/>
+
+        <View
+            android:id="@+id/view_remote_control_connect_hint_skip_2"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:background="@color/connect_hint_num_unselect"/>
+
+        <ImageView
+            android:id="@+id/iv_remote_control_connect_hint_skip_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/connect_hint_skip_2_unselect"/>
+
+        <View
+            android:id="@+id/view_remote_control_connect_hint_skip_3"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:background="@color/connect_hint_num_unselect"/>
+
+        <ImageView
+            android:id="@+id/iv_remote_control_connect_hint_skip_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/connect_hint_skip_3_unselect"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_remote_control_connect_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/agree_button_selector"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="@string/str_wel_next" />
+
+    <include layout="@layout/activity_app_title"/>
+
+</RelativeLayout>

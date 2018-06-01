@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70px"
+    android:background="@drawable/bg_12"
+    tools:background="#876">
+
+    <TextView
+        android:id="@+id/wifi_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="60px"
+        android:textColor="#fff"
+        android:textSize="26px"
+        tools:text="hello" />
+
+    <ImageView
+        android:id="@+id/connected_icon"
+        android:layout_width="33px"
+        android:layout_height="33px"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="36px"
+        android:src="@drawable/loading_success" />
+
+</FrameLayout>

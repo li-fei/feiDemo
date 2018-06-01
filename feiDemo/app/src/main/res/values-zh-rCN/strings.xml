@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">feiDemo</string>
+
+    <string name="str_lang">语言</string>
+    <string name="str_lang_english">英文</string>
+    <string name="str_lang_chinese">中文</string>
+
+
+    <string name="str_yuneec_app_protocol_title">Yuneec APP 用户协议</string>
+    <string name="str_yuneec_app_protocol">
+        The Fence has no minimum altitude limit, so it is actve from the ground upward. Becaus the fence extends to  the ground,
+        the fence should be canceled whenever the model is not flying (determined by combination of senspr inputs and throttle stick position being0) to pervent
+        it from attempting to fly back inside the fence. \n\n
+        The Fence has no minimum altitude limit, so it is actve from the ground upward. Becaus the fence extends to  the ground,
+        the fence should be canceled whenever the model is not flying (determined by combination of senspr inputs and throttle stick position being0) to pervent
+        it from attempting to fly back inside the fence. \n\n
+        The Fence has no minimum altitude limit, so it is actve from the ground upward. Becaus the fence extends to  the ground,
+        the fence should be canceled whenever the model is not flying (determined by combination of senspr inputs and throttle stick position being0) to pervent
+        it from attempting to fly back inside the fence. \n\n
+        The Fence has no minimum altitude limit, so it is actve from the ground upward. Becaus the fence extends to  the ground,
+        the fence should be canceled whenever the model is not flying (determined by combination of senspr inputs and throttle stick position being0) to pervent
+        it from attempting to fly back inside the fence. \n
+    </string>
+    <string name="str_wel_agree">我同意</string>
+    <string name="str_wel_next">下一步</string>
+    <string name="str_yuneec_drone_name">Mantis Q</string>
+    <string name="str_yuneec_drone_disconnect">CONNECT</string>
+    <string name="str_yuneec_drone_unconnected">Unconnected</string>
+    <string name="str_yuneec_drone_connect">START FLY</string>
+    <string name="str_qr_code_info1">Please point the camera to the two-dimensional\n code at the fuselage</string>
+    <string name="str_qr_code_info2">Manual connection</string>
+    <string name="str_more_clear_cache">Clear Cache</string>
+    <string name="str_more_online_shop">Online Shop</string>
+    <string name="str_more_customer_service">Customer Service</string>
+    <string name="str_more_feedback">FeedBack</string>
+    <string name="str_more_ratings">Ratings</string>
+    <string name="str_more_about_app">About App</string>
+    <string name="str_more_about_agreement">YUNEEC APP User Agreement</string>
+    <string name="str_more_about_copyright">Copyright @2018 YUNEEC All Rights Reserved</string>
+    <string name="str_how_to_connect">How to connect</string>
+    <string name="str_skip">skip</string>
+    <string name="str_remote_control">Remote control</string>
+    <string name="str_mobile_phone">Mobile phone</string>
+    <string name="str_connection_tutorials">Connection tutorials</string>
+    <string name="str_remote_control_connect_info1">Find the power button on the drone,\nPress the button 2 second to open the drone;</string>
+    <string name="str_remote_control_connect_info2_1">1.Press the power button for 2 seconds to turn on the remote control,and the remote controller will connect the drone automatcally.</string>
+    <string name="str_remote_control_connect_info2_2">2.Connect the mobile phone and the remote control</string>
+    <string name="str_remote_control_connect_info3">if it is not automatically connected,\nyou need to find drone's WIFI signal and connect.</string>
+    <string name="str_remote_control_page3_scan">Scavenging connection</string>
+    <string name="str_remote_control_page3_to_wifi_setting">To WiFi Setting</string>
+    <string name="str_remote_control_connect_insert">Please insert the remote control first</string>
+    <string name="str_remote_control_list_title">Remote control Connection</string>
+    <string name="str_remote_control_list_connect_title">Already connected</string>
+    <string name="str_remote_control_list_connect_unbind">Unbind</string>
+    <string name="str_remote_control_list_connect_select_title">Select drone signal</string>
+    <string name="str_remote_control_list_connect_refresh">Refresh</string>
+</resources>

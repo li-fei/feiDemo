@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:src="@drawable/first_more_button_selector"/>
+
+    <TextView
+        android:id="@+id/tv_drone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_more"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_yuneec_drone_name" />
+
+    <ImageView
+        android:id="@+id/iv_drone_connect_status_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_drone_name"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/drone_not_connect"/>
+
+    <ImageView
+        android:id="@+id/iv_first_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_drone_name"
+        android:layout_marginTop="310dp"
+        android:padding="15dp"
+        android:src="@drawable/first_gallery_button_selector"/>
+
+    <ImageView
+        android:id="@+id/iv_first_qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_first_gallery"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:src="@drawable/first_qr_code_button_selector"/>
+
+    <Button
+        android:id="@+id/btn_drone_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/drone_connected_status_button_selector"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="@string/str_yuneec_drone_disconnect" />
+
+
+</RelativeLayout>

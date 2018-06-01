@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:clickable="true"
+    android:background="@drawable/drone_connected_item_button_selector">
+
+    <ImageView
+        android:id="@+id/iv_drone_item_icon_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/drone_icon_unconnected"/>
+
+    <TextView
+        android:id="@+id/tv_remote_control_list_item_connect_drone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_drone_item_icon_connected"
+        android:layout_marginLeft="15dp"
+        android:textSize="@dimen/text_size_3"
+        android:textColor="@color/drone_connect_btn_click"
+        android:text="V18S-00000000" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/drone_signal_img"/>
+
+</RelativeLayout>

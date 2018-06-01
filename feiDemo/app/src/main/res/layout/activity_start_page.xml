@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_yuneec_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/rl_agree"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28dp"
+            android:textColor="@color/welcome_text"
+            android:textStyle="bold"
+            android:text="@string/str_yuneec_app_protocol_title" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.fei.demo.views.AlignedTextView
+                android:id="@+id/tv_yuneec_app_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/str_yuneec_app_protocol"
+                android:textColor="@color/welcome_text"
+                android:textSize="18dp">
+            </com.fei.demo.views.AlignedTextView>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/cb_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/agree_checkbox_selector"
+            android:paddingLeft="10dp"
+            android:textColor="@color/welcome_text"
+            android:text="@string/str_wel_agree" />
+
+        <Button
+            android:id="@+id/btn_strat_next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/welcome_btn_unclick"
+            android:enabled="false"
+            android:textColor="@color/welcome_text"
+            android:text="@string/str_wel_next" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_launch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:src="@drawable/launch_bg"/>
+
+</RelativeLayout>

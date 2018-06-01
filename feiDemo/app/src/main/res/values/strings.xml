@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">feiDemo</string>
+
+    <string name="str_lang">Lang</string>
+    <string name="str_lang_english">English</string>
+    <string name="str_lang_chinese">Chinese</string>
+
+</resources>

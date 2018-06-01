@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+         />
+
+    <Button
+        android:id="@+id/btn_start_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="开始下载"/>
+
+    <Button
+        android:id="@+id/btn_pause_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_start_download"
+        android:layout_alignTop="@+id/btn_start_download"
+        android:text="暂停下载"/>
+
+    <Button
+        android:id="@+id/btn_cancel_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_pause_download"
+        android:layout_alignTop="@+id/btn_start_download"
+        android:text="取消下载"/>
+
+    <Button
+        android:id="@+id/btn_get_update_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_start_download"
+        android:text="获取最新版本信息"/>
+
+    <TextView
+        android:id="@+id/tv_update_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_get_update_info"/>
+
+    <com.fei.demo.views.RoundProgressBar
+        android:id="@+id/roundProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:roundWidth="15dp"
+        app:roundColor="@color/deep_purple"
+        app:roundProgressColor="@color/light_blue"
+        app:textColor="@color/light_blue" />
+
+    <com.fei.demo.wifi.WifiConnectView
+        android:layout_width="1000dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update_version">
+
+    </com.fei.demo.wifi.WifiConnectView>
+
+</RelativeLayout>

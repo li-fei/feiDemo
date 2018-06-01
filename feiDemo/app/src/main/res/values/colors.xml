@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="gray">#2D2D2D</color>
+    <color name="gray2">#21353436</color>
+    <color name="gray5">#0FFFFFFF</color>
+    <color name="gray10">#1AFFFFFF</color>
+    <color name="gray12">#08FFFFFF</color>
+    <color name="gray15">#79000000</color>
+    <color name="gray20">#5A595B</color>
+    <color name="gray25">#D8D8D8</color>
+    <color name="gray35">#E638383E</color>
+    <color name="gray40">#B5B5B5</color>
+    <color name="gray50">#80000000</color>
+    <color name="gray42">#60000000</color>
+    <color name="gray75">#E620222C</color>
+    <color name="gray85">#D8000000</color>
+    <color name="gray90">#E5000000</color>
+    <color name="gray95">#F2000000</color>
+    <color name="white90">#E5FFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white25">#40FFFFFF</color>
+    <color name="white10">#1AFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black65">#A6000000</color>
+    <color name="black">#000000</color>
+    <color name="orange">#F97C00</color>
+
+    <color name="transparent">#00ff</color>
+
+
+    <color name="light_blue">#00A1F1</color>
+    <color name="gray_blue">#006DA2</color>
+    <color name="light_green">#7CBB00</color>
+    <color name="gray_green">#527900</color>
+    <color name="light_red">#FF0000</color>
+    <color name="gray_red">#790000</color>
+    <color name="light_gray">#8C8C8C</color>
+    <color name="light_cyan">#39D6E6</color>
+    <color name="light_orange">#FEAD10</color>
+    <color name="gray_brown">#C17835</color>
+    <color name="cyan_gray">#216b74ff</color>
+    <color name="gray_de">#666666</color>
+    <color name="light_sky">#EDF0F9</color>
+
+
+    <color name="text_color">#7C7F89</color>
+    <color name="title_color">#50B3FA</color>
+    <color name="line_color">#DDDADFE5</color>
+    <color name="name_color">#F65EA5</color>
+
+    <color name="red">#F44336</color>
+    <color name="dark_red">#F44336</color>
+    <color name="accent_red">#F44336</color>
+
+    <color name="brown">#795548</color>
+    <color name="dark_brown">#795548</color>
+    <color name="accent_brown">#795548</color>
+
+
+    <color name="blue">#2196F3</color>
+    <color name="dark_blue">#2196F3</color>
+    <color name="accent_blue">#448AFF</color>
+
+    <color name="blue_grey">#607D8B</color>
+    <color name="dark_blue_grey">#607D8B</color>
+    <color name="accent_blue_grey">#607D8B</color>
+
+    <color name="yellow">#FF9800</color>
+    <color name="dark_yellow">#FF9800</color>
+    <color name="accent_yellow">#FF9800</color>
+
+    <color name="deep_purple">#673AB7</color>
+    <color name="dark_deep_purple">#673AB7</color>
+    <color name="accent_deep_purple">#673AB7</color>
+
+    <color name="pink">#E91E63</color>
+    <color name="dark_pink">#E91E63</color>
+    <color name="accent_pink">#E91E63</color>
+
+    <color name="green">#4CAF50</color>
+    <color name="dark_green">#4CAF50</color>
+    <color name="accent_green">#4CAF50</color>
+
+    <color name="text_red">#ffff4081</color>
+    <color name="light_grey">#ffbebebe</color>
+
+    <color name="scan_corner_color">#0effc2</color>
+
+    <!-- V18S -->
+    <color name="welcome_text">#3E3A39</color>
+    <color name="welcome_btn_unclick">#BBBBBB</color>
+    <color name="welcome_btn_click">#FF4612</color>
+    <color name="drone_connect_btn_click">#00E899</color>
+    <color name="connect_hint_num_unselect">#CCCCCC</color>
+
+</resources>

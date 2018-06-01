@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_remote_control_connect_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:textSize="@dimen/text_size_1_1"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_remote_control_list_title" />
+
+    <TextView
+        android:id="@+id/tv_remote_control_list_connect_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remote_control_connect_list_title"
+        android:layout_alignLeft="@+id/tv_remote_control_connect_list_title"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/text_size_4"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_remote_control_list_connect_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_remote_control_list_connected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tv_remote_control_list_connect_title"
+        android:layout_alignLeft="@+id/tv_remote_control_list_connect_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_drone_icon_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/drone_icon_connected"/>
+
+        <TextView
+            android:id="@+id/tv_remote_control_list_connect_drone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_drone_icon_connected"
+            android:layout_marginLeft="15dp"
+            android:textSize="@dimen/text_size_3"
+            android:textColor="@color/drone_connect_btn_click"
+            android:text="V18S-00000000" />
+
+        <TextView
+            android:id="@+id/tv_remote_control_list_connect_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:textSize="@dimen/text_size_3"
+            android:textColor="@drawable/connect_textview_selector"
+            android:text="@string/str_remote_control_list_connect_unbind" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_remote_control_list_connect_select_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_remote_control_list_connected"
+        android:layout_alignLeft="@+id/rl_remote_control_list_connected"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/text_size_4"
+        android:textColor="@color/welcome_text"
+        android:text="@string/str_remote_control_list_connect_select_title" />
+
+    <TextView
+        android:id="@+id/tv_remote_control_list_connect_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-3dp"
+        android:layout_alignTop="@+id/tv_remote_control_list_connect_select_title"
+        android:clickable="true"
+        android:textSize="@dimen/text_size_3"
+        android:textColor="@drawable/connect_textview_selector"
+        android:text="@string/str_remote_control_list_connect_refresh" />
+
+    <ImageView
+        android:id="@+id/iv_drone_connect_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_remote_control_list_connect_refresh"
+        android:layout_alignTop="@+id/tv_remote_control_list_connect_refresh"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/drone_connect_refresh_img"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_drone_connect_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/tv_remote_control_list_connect_select_title"
+        android:layout_alignLeft="@+id/tv_remote_control_list_connect_select_title">
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/activity_app_title"/>
+
+</RelativeLayout>

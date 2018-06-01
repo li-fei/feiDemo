@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="150dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/remote_control_connect_img3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_4"
+            android:textColor="@color/welcome_text"
+            android:text="@string/str_remote_control_connect_info3" />
+
+        <LinearLayout
+            android:id="@+id/ll_remote_control_connect_page_3_scan"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/drone_connected_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_remote_control_connect_page_3_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/first_qr_code_nomal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_remote_control_connect_page_3_scan"
+                android:layout_marginLeft="30dp"
+                android:textSize="@dimen/text_size_2"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_remote_control_page3_scan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_remote_control_connect_page_3_to_wifi_setting"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/drone_connected_button_selector">
+
+            <ImageView
+                android:id="@+id/iv_remote_control_connect_page_3_to_wifi_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/remote_control_connect_img3"/>
+
+            <TextView
+                android:id="@+id/tv_control_connect_page_3_to_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_remote_control_connect_page_3_to_wifi_setting"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/welcome_text"
+                android:text="@string/str_remote_control_page3_to_wifi_setting" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
