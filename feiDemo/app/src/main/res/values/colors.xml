@@ -93,7 +93,7 @@
     <!-- V18S -->
     <color name="welcome_text">#3E3A39</color>
     <color name="welcome_btn_unclick">#BBBBBB</color>
-    <color name="welcome_btn_click">#FF4612</color>
+    <color name="welcome_btn_click">#38d430</color>
     <color name="drone_connect_btn_click">#00E899</color>
     <color name="connect_hint_num_unselect">#CCCCCC</color>
 

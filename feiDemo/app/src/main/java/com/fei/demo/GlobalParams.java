@@ -13,6 +13,7 @@ import com.fei.demo.activity.SocketActivity;
 import com.fei.demo.activity.St16UpdateActivity;
 import com.fei.demo.activity.ThreadActivity;
 import com.fei.demo.activity.UartActivity;
+import com.fei.demo.module.startpage.StartPageActivity;
 
 /**
  * Created by Administrator on 2017/12/18/018.
@@ -32,7 +33,7 @@ public class GlobalParams {
             BindCameraActivity.class ,
             OtaTestActivity.class ,
             ThreadActivity.class ,
-            QRcodeActivity.class ,
+            StartPageActivity.class ,
             GMapActivity.class
     };
 

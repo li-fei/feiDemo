@@ -60,6 +60,7 @@ dependencies {
     implementation 'com.loopj.android:android-async-http:1.4.9'
     compile 'org.xutils:xutils:3.5.0'
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
-    compile 'cn.yipianfengye.android:zxing-library:2.2'
     compile 'com.amap.api:3dmap:6.2.0'
+    implementation project(':qrcodelibrary')
+    implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.2.5'
 }

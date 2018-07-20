@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fei.demo.R;
 import com.fei.demo.activity.BaseActivity;
 import com.fei.demo.adapter.YuneecPagerAdapter;
-import com.uuzuche.lib_zxing.activity.CodeUtils;
+import com.fei.demo.utils.ToastUtil;
+import com.yuneec.qrcodelibrary.CodeUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -177,9 +177,10 @@ public class RemoteControlConnectActivity extends BaseActivity implements View.O
                 }
                 if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                     String result = bundle.getString(CodeUtils.RESULT_STRING);
-                    Toast.makeText(this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+                    ToastUtil.getInstance().toastShow(this, result);
+//                    QRUtil.startConnectWifi(FirstPageActivity.this,result);
                 } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
-                    Toast.makeText(RemoteControlConnectActivity.this, "解析二维码失败", Toast.LENGTH_LONG).show();
+
                 }
             }
         }

@@ -1,28 +1,17 @@
 package com.fei.demo.module.startpage;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fei.demo.R;
 import com.fei.demo.activity.BaseActivity;
 import com.fei.demo.adapter.DroneListRecyclerViewAdapter;
-import com.fei.demo.adapter.YuneecPagerAdapter;
-import com.uuzuche.lib_zxing.activity.CodeUtils;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.fei.demo.module.startpage.FirstPageActivity.REQUEST_CODE;
 
 public class RemoteControlConnectListActivity extends BaseActivity implements View.OnClickListener {
 

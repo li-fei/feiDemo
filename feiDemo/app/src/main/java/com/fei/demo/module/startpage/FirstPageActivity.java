@@ -14,7 +14,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -26,7 +25,8 @@ import android.widget.Toast;
 
 import com.fei.demo.R;
 import com.fei.demo.activity.BaseActivity;
-import com.uuzuche.lib_zxing.activity.CodeUtils;
+import com.fei.demo.utils.ToastUtil;
+import com.yuneec.qrcodelibrary.CodeUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -132,9 +132,9 @@ public class FirstPageActivity extends BaseActivity implements View.OnClickListe
                 break;
             case R.id.iv_first_qr_code:
 //                startActivity(FirstPageActivity.this, QRcodeActivity.class);
+//                Intent intent = new Intent(FirstPageActivity.this, com.yuneec.qrcodelibrary.CaptureActivity.class);
                 Intent intent = new Intent(FirstPageActivity.this, QRcodeActivity.class);
                 startActivityForResult(intent,REQUEST_CODE);
-                overridePendingTransition(R.anim.alpha_in, R.anim.alpha_out);
                 break;
             case R.id.btn_drone_connect:
                 if (isDroneConnected) {
@@ -235,7 +235,7 @@ public class FirstPageActivity extends BaseActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE) {
+        if (resultCode == REQUEST_CODE) {
             if (null != data) {
                 Bundle bundle = data.getExtras();
                 if (bundle == null) {
@@ -243,9 +243,10 @@ public class FirstPageActivity extends BaseActivity implements View.OnClickListe
                 }
                 if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_SUCCESS) {
                     String result = bundle.getString(CodeUtils.RESULT_STRING);
-                    Toast.makeText(this, "解析结果:" + result, Toast.LENGTH_LONG).show();
+                    ToastUtil.getInstance().toastShow(this, result);
+//                    QRUtil.startConnectWifi(FirstPageActivity.this,result);
                 } else if (bundle.getInt(CodeUtils.RESULT_TYPE) == CodeUtils.RESULT_FAILED) {
-                    Toast.makeText(FirstPageActivity.this, "解析二维码失败", Toast.LENGTH_LONG).show();
+
                 }
             }
         }

@@ -66,6 +66,8 @@
         <activity android:name=".activity.ThreadActivity"/>
         <activity android:name=".module.startpage.QRcodeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".module.startpage.QRcodeZbarActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".module.startpage.MoreActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".module.startpage.ConnectSelectActivity"
