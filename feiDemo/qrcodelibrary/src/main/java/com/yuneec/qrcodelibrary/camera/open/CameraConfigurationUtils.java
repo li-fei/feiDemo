@@ -339,9 +339,40 @@ public final class CameraConfigurationUtils {
     if (defaultPreview == null) {
       throw new IllegalStateException("Parameters contained no preview size!");
     }
+
+//    Point screenResolutionForCamera = new Point();
+//    screenResolutionForCamera.x = screenResolution.x;
+//    screenResolutionForCamera.y = screenResolution.y;
+//    // preview size is always something like 480*320, other 320*480
+//    if (screenResolution.x < screenResolution.y) {
+//      screenResolutionForCamera.x = screenResolution.y;
+//      screenResolutionForCamera.y = screenResolution.x;
+//    }
+//    Point cameraResolution = getCameraResolution(parameters, screenResolutionForCamera);
+//    Log.i(TAG, "No suitable preview sizes, using default: " + cameraResolution );
+//    return cameraResolution ;
+
     Point defaultSize = new Point(defaultPreview.width, defaultPreview.height);
     Log.i(TAG, "No suitable preview sizes, using default: " + defaultSize);
     return defaultSize;
+  }
+
+  private static Point getCameraResolution(Camera.Parameters parameters, Point screenResolution) {
+    String previewSizeValueString = parameters.get("preview-size-values");
+    // saw this on Xperia
+    if (previewSizeValueString == null) {
+      previewSizeValueString = parameters.get("preview-size-value");
+    }
+    Point cameraResolution = null;
+    if (previewSizeValueString != null) {
+      Log.e(TAG, "preview-size-values parameter: " + previewSizeValueString);
+      cameraResolution = CameraConfigurationUtils.findBestPreviewSizeValue(parameters, screenResolution);
+    }
+    if (cameraResolution == null) {
+      // Ensure that the camera resolution is a multiple of 8, as the screen may not be.
+      cameraResolution = new Point((screenResolution.x >> 3) << 3, (screenResolution.y >> 3) << 3);
+    }
+    return cameraResolution;
   }
 
   private static String findSettableValue(String name,

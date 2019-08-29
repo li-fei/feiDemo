@@ -33,7 +33,6 @@ public class MainActivity extends Activity {
         initData();
         initView();
         checkPermission();
-
     }
 
     private void initData() {
@@ -57,7 +56,8 @@ public class MainActivity extends Activity {
             Manifest.permission.CAMERA,
             Manifest.permission.RECORD_AUDIO,
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.ACCESS_COARSE_LOCATION };
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.CHANGE_WIFI_STATE};
     List<String> mPermissionList = new ArrayList<>();
 
     private static final int PERMISSON_REQUESTCODE = 100;

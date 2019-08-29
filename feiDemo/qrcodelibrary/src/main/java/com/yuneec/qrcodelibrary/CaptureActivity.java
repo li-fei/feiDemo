@@ -478,14 +478,13 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
             drawResultPoints(barcode, scaleFactor, rawResult);
         }
 
-        CharSequence displayContents = resultHandler.getDisplayContents();
-        Intent data = new Intent();
-        Log.e("yuneec0",rawResult.getText());
-        data.putExtra("displayContents", rawResult.getText());
-        setResult(100, data);
-        finish();
+//        CharSequence displayContents = resultHandler.getDisplayContents();
+//        Intent data = new Intent();
+//        Log.e("yuneec0",rawResult.getText());
+//        data.putExtra("displayContents", rawResult.getText());
+//        setResult(100, data);
+//        finish();
 
-        /*
         switch (source) {
             case NATIVE_APP_INTENT:
             case PRODUCT_SEARCH_LINK:
@@ -512,7 +511,6 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
                 }
                 break;
         }
-        */
     }
 
     /**

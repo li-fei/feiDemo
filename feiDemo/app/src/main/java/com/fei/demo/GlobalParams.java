@@ -7,6 +7,7 @@ import com.fei.demo.activity.GMapActivity;
 import com.fei.demo.activity.GpsActivity;
 import com.fei.demo.activity.LangActivity;
 import com.fei.demo.activity.OtaTestActivity;
+import com.fei.demo.activity.WIFIActivity;
 import com.fei.demo.module.startpage.QRcodeActivity;
 import com.fei.demo.activity.SeekBarActivity;
 import com.fei.demo.activity.SocketActivity;
@@ -14,6 +15,7 @@ import com.fei.demo.activity.St16UpdateActivity;
 import com.fei.demo.activity.ThreadActivity;
 import com.fei.demo.activity.UartActivity;
 import com.fei.demo.module.startpage.StartPageActivity;
+import com.yuneec.qrcodelibrary.CaptureActivity;
 
 /**
  * Created by Administrator on 2017/12/18/018.
@@ -34,7 +36,9 @@ public class GlobalParams {
             OtaTestActivity.class ,
             ThreadActivity.class ,
             StartPageActivity.class ,
-            GMapActivity.class
+            GMapActivity.class ,
+            WIFIActivity.class,
+            CaptureActivity.class
     };
 
 }

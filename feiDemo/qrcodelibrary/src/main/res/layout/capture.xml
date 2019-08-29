@@ -25,6 +25,8 @@
     <com.yuneec.qrcodelibrary.ViewfinderView
         android:id="@+id/viewfinder_view"
         app:inner_margintop="100dp"
+        app:frame_width="200dp"
+        app:frame_height="200dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" />
 

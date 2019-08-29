@@ -44,7 +44,7 @@
     <string name="str_remote_control_connect_info1">Find the power button on the drone,\nPress the button 2 second to open the drone;</string>
     <string name="str_remote_control_connect_info2_1">1.Press the power button for 2 seconds to turn on the remote control,and the remote controller will connect the drone automatcally.</string>
     <string name="str_remote_control_connect_info2_2">2.Connect the mobile phone and the remote control</string>
-    <string name="str_remote_control_connect_info3">if it is not automatically connected,\nyou need to find drone's WIFI signal and connect.</string>
+    <string name="str_remote_control_connect_info3">if it is not automatically connected,\nyou need to find drone\'s WIFI signal and connect.</string>
     <string name="str_remote_control_page3_scan">Scavenging connection</string>
     <string name="str_remote_control_page3_to_wifi_setting">To WiFi Setting</string>
     <string name="str_remote_control_connect_insert">Please insert the remote control first</string>

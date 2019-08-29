@@ -36,7 +36,7 @@ public class QRcodeActivity extends BaseActivity {
             bundle.putString(CodeUtils.RESULT_STRING, result);
             resultIntent.putExtras(bundle);
             QRcodeActivity.this.setResult(REQUEST_CODE, resultIntent);
-            QRcodeActivity.this.finish();
+//            QRcodeActivity.this.finish();
         }
 
         @Override
