@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ftp.FTPActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="说明：请将'wireless_ofdm_lc6500.zip'文件拷贝到遥控器根目录"
+            android:textColor="@color/red"
+            android:textSize="26px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_up_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/yellow"
+                android:textSize="26px" />
+
+            <Button
+                android:id="@+id/btn_ofdm_upload_st16"
+                android:layout_width="359px"
+                android:layout_height="62px"
+                android:layout_gravity="center"
+                android:layout_marginTop="35px"
+                android:text="upLoad_ST16"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+
+            <Button
+                android:id="@+id/btn_ofdm_upload_drone"
+                android:layout_width="359px"
+                android:layout_height="62px"
+                android:layout_gravity="center"
+                android:layout_marginTop="35px"
+                android:text="upLoad_Drone"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

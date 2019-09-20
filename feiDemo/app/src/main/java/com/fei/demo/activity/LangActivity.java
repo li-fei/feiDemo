@@ -54,7 +54,7 @@ public class LangActivity extends Activity {
         DisplayMetrics dm = resources.getDisplayMetrics();
         config.locale = lang;
         resources.updateConfiguration(config, dm);
-//        Intent intent = new Intent(this, MainActivity.class);
+//        Intent intent = new Intent(this, FTPActivity.class);
 //        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 ////        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 //        startActivity(intent);
