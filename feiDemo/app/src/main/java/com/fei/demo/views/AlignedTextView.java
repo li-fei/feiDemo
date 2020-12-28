@@ -7,7 +7,7 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 
-public class AlignedTextView extends android.support.v7.widget.AppCompatTextView {
+public class AlignedTextView extends androidx.appcompat.widget.AppCompatTextView {
 
     private int mLineY = 0;//总行高
     private int mViewWidth;//TextView的总宽度

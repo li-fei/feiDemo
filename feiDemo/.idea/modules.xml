@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/feiDemo.iml" filepath="$PROJECT_DIR$/feiDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/qrcodelibrary/qrcodelibrary.iml" filepath="$PROJECT_DIR$/qrcodelibrary/qrcodelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/feiDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/feiDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qrcodelibrary/feiDemo.qrcodelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/qrcodelibrary/feiDemo.qrcodelibrary.iml" />
     </modules>
   </component>
 </project>

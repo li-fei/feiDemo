@@ -3,8 +3,8 @@ package com.fei.demo.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -13,8 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fei.demo.R;
-import com.fei.demo.module.startpage.FirstPageActivity;
-import com.fei.demo.module.startpage.StartPageActivity;
 
 public class BaseActivity extends AppCompatActivity {
 

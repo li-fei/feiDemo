@@ -66,6 +66,7 @@
         <activity android:name=".activity.ThreadActivity"/>
         <activity android:name=".activity.GMapActivity"/>
         <activity android:name=".activity.WIFIActivity"/>
+        <activity android:name=".activity.AndroidxActivity"/>
 
         <activity android:name=".module.startpage.QRcodeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
