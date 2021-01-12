@@ -14,6 +14,7 @@ import com.fei.demo.activity.St16UpdateActivity;
 import com.fei.demo.activity.ThreadActivity;
 import com.fei.demo.activity.UartActivity;
 import com.fei.demo.activity.WIFIActivity;
+import com.fei.demo.kotlin.KotlinActivity;
 import com.fei.demo.module.startpage.StartPageActivity;
 import com.yuneec.qrcodelibrary.CaptureActivity;
 
@@ -39,7 +40,8 @@ public class GlobalParams {
             GMapActivity.class,
             WIFIActivity.class,
             CaptureActivity.class,
-            AndroidxActivity.class
+            AndroidxActivity.class,
+            KotlinActivity.class
     };
 
 }
