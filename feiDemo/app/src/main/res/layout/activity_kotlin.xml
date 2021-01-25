@@ -11,4 +11,19 @@
         android:text="Hello Kotlin!"
          />
 
+    <Button
+        android:id="@+id/btn_kotlin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="kotlin"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accent_blue"
+        android:layout_marginTop="50dp"
+        />
+
 </RelativeLayout>

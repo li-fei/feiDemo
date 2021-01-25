@@ -38,21 +38,21 @@
         <activity
             android:name=".module.startpage.StartPageActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
-            <!--<intent-filter>-->
-            <!--<action android:name="android.intent.action.MAIN" />-->
-            <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".module.startpage.FirstPageActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -71,8 +71,8 @@
         <activity android:name=".activity.GMapActivity" />
         <activity android:name=".activity.WIFIActivity" />
         <activity android:name=".activity.AndroidxActivity" />
-        <activity android:name=".kotlin.KotlinActivity"/>
-
+        <activity android:name=".kotlin.KotlinActivity" />
+        <activity android:name=".kotlin.KtActivity"></activity>
         <activity
             android:name=".module.startpage.QRcodeActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -94,7 +94,6 @@
         <activity
             android:name=".module.startpage.RemoteControlConnectListActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
     </application>
 
 </manifest>
