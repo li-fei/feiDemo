@@ -3,12 +3,9 @@ package com.fei.demo.module.startpage;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -19,14 +16,10 @@ import android.widget.RelativeLayout;
 
 import com.fei.demo.R;
 import com.fei.demo.activity.BaseActivity;
-import com.fei.demo.activity.MainActivity;
-import com.fei.demo.adapter.WelcomeAdapter;
 import com.fei.demo.utils.SharedPreUtil;
 import com.fei.demo.views.AlignedTextView;
 
 import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
 
 public class StartPageActivity extends BaseActivity implements View.OnClickListener{
 

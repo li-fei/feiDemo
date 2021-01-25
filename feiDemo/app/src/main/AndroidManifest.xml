@@ -20,9 +20,10 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -34,54 +35,65 @@
             android:name="com.amap.api.v2.apikey"
             android:value="3ade752c721fba74113eebb1c4c95333" />
 
-        <activity android:name=".module.startpage.StartPageActivity"
-                  android:theme="@style/Theme.AppCompat.NoActionBar">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
+        <activity
+            android:name=".module.startpage.StartPageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
 
-        <activity android:name=".activity.MainActivity"
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".module.startpage.FirstPageActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".activity.WelcomeActivity"/>
-        <activity android:name=".activity.SocketActivity"/>
-        <activity android:name=".activity.UartActivity"/>
-        <activity android:name=".activity.AsyncHttpActivity"/>
-        <activity android:name=".activity.CmdActivity"/>
-        <activity android:name=".activity.SeekBarActivity"/>
-        <activity android:name=".activity.GpsActivity"/>
-        <activity android:name=".activity.LangActivity"/>
-        <activity android:name=".activity.St16UpdateActivity"/>
-        <activity android:name=".activity.BindCameraActivity"/>
-        <activity android:name=".activity.OtaTestActivity"/>
-        <activity android:name=".activity.ThreadActivity"/>
-        <activity android:name=".activity.GMapActivity"/>
-        <activity android:name=".activity.WIFIActivity"/>
-
-        <activity android:name=".module.startpage.QRcodeActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.QRcodeZbarActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.MoreActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.ConnectSelectActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.RemoteControlConnectActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.MobilePhoneConnectActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".module.startpage.RemoteControlConnectListActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-
+        <activity
+            android:name=".module.startpage.FirstPageActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.SocketActivity" />
+        <activity android:name=".activity.UartActivity" />
+        <activity android:name=".activity.AsyncHttpActivity" />
+        <activity android:name=".activity.CmdActivity" />
+        <activity android:name=".activity.SeekBarActivity" />
+        <activity android:name=".activity.GpsActivity" />
+        <activity android:name=".activity.LangActivity" />
+        <activity android:name=".activity.St16UpdateActivity" />
+        <activity android:name=".activity.BindCameraActivity" />
+        <activity android:name=".activity.OtaTestActivity" />
+        <activity android:name=".activity.ThreadActivity" />
+        <activity android:name=".activity.GMapActivity" />
+        <activity android:name=".activity.WIFIActivity" />
+        <activity android:name=".activity.AndroidxActivity" />
+        <activity android:name=".kotlin.KotlinActivity" />
+        <activity android:name=".kotlin.KtActivity"></activity>
+        <activity
+            android:name=".module.startpage.QRcodeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.QRcodeZbarActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.MoreActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.ConnectSelectActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.RemoteControlConnectActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.MobilePhoneConnectActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".module.startpage.RemoteControlConnectListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

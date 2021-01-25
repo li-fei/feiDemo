@@ -1,13 +1,11 @@
 package com.fei.demo.module.startpage;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.fei.demo.R;
 import com.fei.demo.activity.BaseActivity;
