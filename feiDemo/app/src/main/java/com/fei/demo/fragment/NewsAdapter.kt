@@ -1,5 +1,6 @@
 package com.fei.demo.fragment
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fei.demo.R
 import kotlinx.android.synthetic.main.item_left.view.*
 
-class NewsAdapter(private val list: List<News>) :
+class NewsAdapter(val context: Context, private val list: List<News>) :
         RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
     interface OnItemClickListener {
@@ -30,10 +31,23 @@ class NewsAdapter(private val list: List<News>) :
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
         holder.view.tv_item.text = list[position].title
-        holder.view.setOnClickListener { onClick.OnItemClick(holder.view, position) }
+        if (list[position].isSelected){
+            holder.view.setBackgroundColor(context.resources.getColor(R.color.red))
+        }else{
+            holder.view.setBackgroundColor(context.resources.getColor(R.color.yellow))
+        }
+        holder.view.setOnClickListener {
+            for (lis in list){
+                list[position].isSelected = true
+                lis.isSelected = false
+            }
+            notifyDataSetChanged()
+            onClick.OnItemClick(holder.view, position)
+        }
     }
 
     override fun getItemCount(): Int {
         return list.size
     }
+
 }
