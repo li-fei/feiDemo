@@ -23,6 +23,7 @@ class NewsAdapter(val context: Context, private val list: List<News>) :
 
     class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val view = itemView
+        var tv_item = view.tv_item
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
@@ -30,7 +31,7 @@ class NewsAdapter(val context: Context, private val list: List<News>) :
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
-        holder.view.tv_item.text = list[position].title
+        holder.tv_item.text = list[position].title
         if (list[position].isSelected){
             holder.view.setBackgroundColor(context.resources.getColor(R.color.red))
         }else{

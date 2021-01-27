@@ -14,11 +14,11 @@ import com.fei.demo.R
 import com.fei.demo.utils.Logg
 import kotlinx.android.synthetic.main.my_fragment.*
 
-class News(var title:String, var content:String ,var isSelected:Boolean)
+class News(var title: String, var content: String, var isSelected: Boolean)
 
 class MyFragment : Fragment() {
 
-    var list  = ArrayList<News>()
+    var list = ArrayList<News>()
 
     companion object {
         fun newInstance() = MyFragment()
@@ -36,23 +36,23 @@ class MyFragment : Fragment() {
         initDate()
     }
 
-    private fun initDate(){
-        for (num in 1 ..30)
-            list.add(News("新闻$num", "震惊$num",false))
+    private fun initDate() {
+        for (num in 1..30)
+            list.add(News("新闻$num", "震惊$num", false))
         Logg.loge("MyFragment initDate")
         list[1].isSelected = true
         replaceFragment(RightFragment(list[1]))
 
         recycler.layoutManager = LinearLayoutManager(this.context)
-        val adapter = NewsAdapter(this.requireActivity(),list)
-        recycler.adapter =  adapter
+        val adapter = NewsAdapter(this.requireActivity(), list)
+        recycler.adapter = adapter
         adapter.setOnItemClick(object : NewsAdapter.OnItemClickListener {
             override fun OnItemClick(view: View, position: Int) {
-                when(position){
-                    0->{
+                when (position) {
+                    0 -> {
                         replaceFragment(MyFragment())
                     }
-                    else->{
+                    else -> {
                         replaceFragment(RightFragment(list[position]))
                     }
                 }
@@ -67,19 +67,23 @@ class MyFragment : Fragment() {
         })
 
     }
-    private  fun replaceFragment( fragment:Fragment){
+
+    private fun replaceFragment(fragment: Fragment) {
         val transaction = childFragmentManager.beginTransaction()
-        transaction.replace(R.id.right_layout,fragment)
+        transaction.replace(R.id.right_layout, fragment)
         transaction.commit()
     }
 
-    val mHandler: Handler = object: Handler(Looper.getMainLooper()){
+    val mHandler: Handler = object : Handler(Looper.getMainLooper()) {
         override fun handleMessage(msg: Message) {
             super.handleMessage(msg)
-            when(msg.what){
-                1-> {
+            when (msg.what) {
+                1 -> {
                     val mBundle = msg?.data
                     Logg.loge("position ---> " + mBundle.getInt("KEY"))
+                }
+                else -> {
+
                 }
             }
         }
