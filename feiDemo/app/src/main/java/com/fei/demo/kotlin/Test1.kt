@@ -2,6 +2,29 @@ package com.fei.demo.kotlin
 
 import com.fei.demo.utils.Logg
 
+
+class Test1{
+
+    companion object{
+        @JvmStatic
+        fun newInstance(): Test1 {
+            return Test1()
+        }
+    }
+
+    fun line(){
+        println("-------------------------------------")
+    }
+
+    fun star(){
+        println("**************************************")
+    }
+
+    fun main() {
+        testMain()
+    }
+}
+
 /*
     Object:取消，在Java里Object是所有类的基类，但在Kotlin里，基类改成了Any
     Any:新增，Kotlin里所有类的基类
@@ -59,10 +82,9 @@ fun testMain() {
     m.baseFun1()
     m.name
     My.TAG
+
+    repeat(5) { print("1.") }
 }
-
-
-
 
 
 
