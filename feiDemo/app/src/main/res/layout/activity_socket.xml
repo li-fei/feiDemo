@@ -13,4 +13,20 @@
         android:text="Hello Socket!"
          />
 
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="发送数据"
+        />
+
+    <Button
+        android:id="@+id/btn_receive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="接收数据"
+        />
+
 </RelativeLayout>
